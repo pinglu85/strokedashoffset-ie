@@ -40,14 +40,11 @@ class App extends React.Component {
   };
 
   render() {
-    let text = null;
+    let text = <p>Browser is not IE</p>;
     let className = 'animate';
     if (isIE) {
       text = <p>Browser is IE</p>;
       className = 'path';
-    } else {
-      text = <p>Browser is not IE</p>;
-      className = 'animate';
     }
     return (
       <div>
