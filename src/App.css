@@ -3,6 +3,7 @@
   width: 500px;
 }
 
+/* for scaling svg properly in IE */
 .svg-wrapper::before {
   content: '';
   display: block;
