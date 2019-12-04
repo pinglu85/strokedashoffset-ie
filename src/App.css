@@ -1,0 +1,19 @@
+.svg-wrapper {
+  position: relative;
+  width: 500px;
+}
+
+.svg-wrapper::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  visibility: hidden;
+}
+
+.svg-wrapper svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}

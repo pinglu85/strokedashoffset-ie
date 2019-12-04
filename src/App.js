@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import './App.css';
 
 const isIE = /*@cc_on!@*/ false || !!document.documentMode;
 
@@ -49,16 +50,18 @@ class App extends React.Component {
     return (
       <div>
         {text}
-        <AnimateSVG offset={this.state.offset} viewBox="0 0 400 400">
-          <path
-            fill="none"
-            stroke="#000"
-            strokeDasharray="10 10"
-            strokeWidth="8"
-            d="M0 0c100 10 200 80 300 15"
-            className={className}
-          ></path>
-        </AnimateSVG>
+        <div className="svg-wrapper">
+          <AnimateSVG offset={this.state.offset} viewBox="0 0 400 400">
+            <path
+              fill="none"
+              stroke="#000"
+              strokeDasharray="10 10"
+              strokeWidth="8"
+              d="M0 0c100 10 200 80 300 15"
+              className={className}
+            ></path>
+          </AnimateSVG>
+        </div>
       </div>
     );
   }
