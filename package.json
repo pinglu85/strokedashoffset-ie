@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
     "react-scripts": "^3.4.3",
     "serialize-javascript": "^5.0.1",
     "styled-components": "^5.2.0"
